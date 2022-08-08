@@ -24,8 +24,7 @@ func main() {
 			}
 
 			for _, val := range messages {
-				fmt.Printf("messages sent, offset %d, key %s, val %s \n", val.Offset, val.Key, val.Value)
-				fmt.Printf("Messages sent to Kafka Server with key=%s and value=%s. Offset=%d", val.Key, val.Value, val.Offset)
+				fmt.Printf("Messages sent to Kafka Server with key=%s and value=%s. Offset=%d \n", val.Key, val.Value, val.Offset)
 			}
 		},
 	}
